@@ -1,0 +1,5 @@
+# ./tests_not_failing/test_import.yaml
+# Should fail ‒ not foo in the package
+- case: test_import
+  main: |
+    from foobar import foo

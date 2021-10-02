@@ -1,0 +1,6 @@
+# ./tests/test_call.yaml
+# Should fail ‒ invalid input type
+- case: test_call
+  main: |
+    from foobar import bar
+    reveal_type(bar("foo"))  # N: Revealed type is "None"

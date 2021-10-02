@@ -1,0 +1,6 @@
+# ./tests/test_import.yaml
+# Should fail ‒ not foo in the package
+- case: test_import
+  main: |
+    from foobar import foo
+    reveal_type(foo)  # N: Revealed type is "def (x: builtins.int)"

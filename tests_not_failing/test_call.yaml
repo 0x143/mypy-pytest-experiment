@@ -1,0 +1,7 @@
+# ./tests_not_failing/test_call.yaml
+# Should fail ‒ invalid input type
+- case: test_call
+  main: |
+    from foobar import bar
+
+    bar("foo")
